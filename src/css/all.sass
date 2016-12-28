@@ -1,0 +1,64 @@
+$strip_color: #ffbf00
+$white_color: #fafafa
+$bg_color: #bfbfbf
+
+@mixin size($x)
+	width: $x
+	height: $x
+
+@mixin placeholder()
+  input::-webkit-input-placeholder
+    @content
+  input:-moz-placeholder
+    @content
+  input::-moz-placeholder
+    @content
+  input:-ms-input-placeholder
+    @content
+
+@import 'sections/nav'
+@import 'sections/about'
+@import 'sections/jury'
+@import 'sections/add_form'
+@import 'sections/footer'
+
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li
+	margin: 0
+	padding: 0
+
+.wrap
+	font-size: 14px
+	max-width: 1920px
+	width: 100%
+	margin: auto
+
+section
+	box-sizing: border-box
+	width: 960px
+	background-color: white
+	
+.section_divider
+	width: 100%
+	height: 16px
+	background-color: $strip_color
+
+// clearfix
+
+.clearfix:after
+	visibility: hidden
+	display: block
+	font-size: 0
+	content: " "
+	clear: both
+	height: 0
+
+.clearfix
+	display: inline-block
+
+* html .clearfix
+	height: 1%
+
+.clearfix
+	display: block
+

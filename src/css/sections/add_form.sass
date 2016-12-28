@@ -1,0 +1,98 @@
+.add_parent_form_cnt
+	width: 100%
+	background-color: $strip_color
+
+.add_form_cnt
+	margin: auto
+	background-color: $strip_color
+	padding-bottom: 200px
+
+	h2
+		font-size: 200%
+		text-align: center
+		color: white
+		padding: 70px 0px 85px
+
+	h3
+		font-size: 200%
+		padding-bottom: 40px
+
+	.add_form_cnt_el
+		vertical-align: top
+		box-sizing: border-box
+		width: 50%
+		display: inline-block
+		padding: 0px 10px
+
+
+		ul
+			list-style-type: none
+			font-size: 16px
+
+			.upload_img_cnt
+				position: relative
+
+				.real_input_file
+					position: absolute
+					width: 100%
+					background-color: red
+					opacity: 0
+					z-index: 1
+
+				.fake_input_file
+
+					.clip_cnt_hlp
+						padding: 9px 16px
+						border-left: 3px solid #ececec
+						position: absolute
+						top: 0px
+						right: 3px
+
+			li
+				margin-top: 5px
+
+		.el_shift
+			margin-bottom: 30px
+
+		form
+
+			@include placeholder()
+				color: $strip_color
+
+			input
+				font-size: 16px
+				box-sizing: border-box
+				border: 3px solid #ececec
+				margin-bottom: 25px
+				padding: 10px 20px
+				width: 100%
+
+				&:focus
+					outline: none
+
+
+			li
+				margin-top: 0px
+
+
+	.add_form_btns_cnt
+
+		.add_form_btn
+			box-sizing: border-box
+			width: 460px
+			height: 80px
+			line-height: 74px
+			text-align: center
+			font-weight: bold
+			display: inline-block
+			border: 3px solid white
+			color: white
+			font-size: 250%
+			margin: 0px 10px
+
+			&:hover
+				cursor: pointer
+
+
+
+

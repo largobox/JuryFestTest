@@ -1,0 +1,31 @@
+nav
+	height: 50px
+	box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.5)
+	font-size: 100%
+	position: relative
+	z-index: 1
+
+	ul
+		list-style-type: none
+		text-align: center
+		height: 100%
+
+		li
+			display: inline-block
+			line-height: 50px
+			width: 160px
+
+			a
+				box-sizing: border-box
+				display: block
+				padding: 0px 10px 0px 20px
+				+size(100%)
+				text-decoration: none
+				color: #1d1d22
+
+		.active
+			background-color: $strip_color
+			text-transform: uppercase
+
+			a
+				color: $white_color

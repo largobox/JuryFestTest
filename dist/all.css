@@ -1,0 +1,312 @@
+nav {
+  height: 50px;
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.5);
+  font-size: 100%;
+  position: relative;
+  z-index: 1; }
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    height: 100%; }
+    nav ul li {
+      display: inline-block;
+      line-height: 50px;
+      width: 160px; }
+      nav ul li a {
+        box-sizing: border-box;
+        display: block;
+        padding: 0px 10px 0px 20px;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #1d1d22; }
+    nav ul .active {
+      background-color: #ffbf00;
+      text-transform: uppercase; }
+      nav ul .active a {
+        color: #fafafa; }
+
+.about_cnt {
+  padding: 0px 10px 200px;
+  position: relative;
+  z-index: 0;
+  margin: auto; }
+  .about_cnt .about_cnt_nav {
+    width: 800px;
+    text-align: center;
+    padding: 45px 0px;
+    margin: auto; }
+    .about_cnt .about_cnt_nav .active_about_el {
+      border: 20px solid #ffbf00;
+      filter: none; }
+    .about_cnt .about_cnt_nav .about_el {
+      vertical-align: middle;
+      display: inline-block;
+      padding: 0px 50px; }
+      .about_cnt .about_cnt_nav .about_el:hover {
+        cursor: pointer; }
+      .about_cnt .about_cnt_nav .about_el:hover > object {
+        filter: none; }
+      .about_cnt .about_cnt_nav .about_el:hover > .about_el_label {
+        color: #ffbf00; }
+      .about_cnt .about_cnt_nav .about_el .about_el_label {
+        height: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #bfbfbf;
+        font-size: 100%;
+        padding-top: 10px; }
+      .about_cnt .about_cnt_nav .about_el .active_about_el_label {
+        text-transform: uppercase;
+        font-size: 150%;
+        color: #ffbf00;
+        line-height: 40px; }
+  .about_cnt .about_el_desc {
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    width: 960px; }
+    .about_cnt .about_el_desc p {
+      font-size: 16px;
+      padding-bottom: 10px; }
+    .about_cnt .about_el_desc span {
+      color: #ffbf00; }
+  .about_cnt object {
+    border: 20px solid transparent;
+    position: relative;
+    z-index: -1;
+    width: 105px;
+    height: 105px;
+    filter: grayscale(100%);
+    padding: 10px; }
+
+.jury_parent_cnt {
+  background-color: #ececec;
+  width: 100%; }
+
+.jury_cnt {
+  width: 1050px;
+  margin: auto;
+  background-color: #ececec;
+  padding-bottom: 180px; }
+  .jury_cnt h2 {
+    text-align: center;
+    color: #ffbf00;
+    padding: 100px 0px;
+    font-size: 200%; }
+  .jury_cnt ul {
+    padding: 0px 45px;
+    list-style-type: none; }
+    .jury_cnt ul li {
+      position: relative;
+      width: 176px;
+      height: 420px;
+      float: left;
+      padding: 0px 8px;
+      font-size: 16px;
+      margin-top: 10px; }
+      .jury_cnt ul li:hover > .delete_btn_cnt {
+        transition: .3s;
+        cursor: pointer;
+        opacity: 1; }
+      .jury_cnt ul li .delete_btn_cnt {
+        font-size: 16px;
+        padding: 8px 0px;
+        width: 176px;
+        background-color: rgba(255, 191, 1, 0.75);
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: .3s;
+        border: none; }
+        .jury_cnt ul li .delete_btn_cnt:focus {
+          outline: none; }
+      .jury_cnt ul li img {
+        width: 100%;
+        height: 250px;
+        display: block; }
+      .jury_cnt ul li .jury_name {
+        box-sizing: border-box;
+        text-align: center;
+        height: 50px;
+        background-color: #ffbf00;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 8px 20px; }
+      .jury_cnt ul li .jury_status {
+        box-sizing: border-box;
+        height: 100px;
+        padding: 16px 10px 0px;
+        text-align: center; }
+      .jury_cnt ul li .jury_site {
+        height: 14px;
+        color: #ffbf00;
+        text-align: center; }
+  .jury_cnt .jury_btns_cnt {
+    margin-top: 140px; }
+    .jury_cnt .jury_btns_cnt:hover {
+      cursor: pointer; }
+    .jury_cnt .jury_btns_cnt .jury_btn {
+      vertical-align: top;
+      font-weight: bold;
+      font-size: 200%;
+      text-align: center;
+      padding: 20px 0px;
+      width: 500px;
+      display: inline-block;
+      border: 3px solid #ffbf00;
+      color: #ffbf00;
+      margin: 0px 6px; }
+    .jury_cnt .jury_btns_cnt .jury_btn_add {
+      height: 72px;
+      padding: 0px 0px; }
+      .jury_cnt .jury_btns_cnt .jury_btn_add a {
+        line-height: 72px;
+        height: 100%;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #ffbf00; }
+
+.add_parent_form_cnt {
+  width: 100%;
+  background-color: #ffbf00; }
+
+.add_form_cnt {
+  margin: auto;
+  background-color: #ffbf00;
+  padding-bottom: 200px; }
+  .add_form_cnt h2 {
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    padding: 70px 0px 85px; }
+  .add_form_cnt h3 {
+    font-size: 200%;
+    padding-bottom: 40px; }
+  .add_form_cnt .add_form_cnt_el {
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 50%;
+    display: inline-block;
+    padding: 0px 10px; }
+    .add_form_cnt .add_form_cnt_el ul {
+      list-style-type: none;
+      font-size: 16px; }
+      .add_form_cnt .add_form_cnt_el ul .upload_img_cnt {
+        position: relative; }
+        .add_form_cnt .add_form_cnt_el ul .upload_img_cnt .real_input_file {
+          position: absolute;
+          width: 100%;
+          background-color: red;
+          opacity: 0;
+          z-index: 1; }
+        .add_form_cnt .add_form_cnt_el ul .upload_img_cnt .fake_input_file .clip_cnt_hlp {
+          padding: 9px 16px;
+          border-left: 3px solid #ececec;
+          position: absolute;
+          top: 0px;
+          right: 3px; }
+      .add_form_cnt .add_form_cnt_el ul li {
+        margin-top: 5px; }
+    .add_form_cnt .add_form_cnt_el .el_shift {
+      margin-bottom: 30px; }
+    .add_form_cnt .add_form_cnt_el form input::-webkit-input-placeholder {
+      color: #ffbf00; }
+    .add_form_cnt .add_form_cnt_el form input:-moz-placeholder {
+      color: #ffbf00; }
+    .add_form_cnt .add_form_cnt_el form input::-moz-placeholder {
+      color: #ffbf00; }
+    .add_form_cnt .add_form_cnt_el form input:-ms-input-placeholder {
+      color: #ffbf00; }
+    .add_form_cnt .add_form_cnt_el form input {
+      font-size: 16px;
+      box-sizing: border-box;
+      border: 3px solid #ececec;
+      margin-bottom: 25px;
+      padding: 10px 20px;
+      width: 100%; }
+      .add_form_cnt .add_form_cnt_el form input:focus {
+        outline: none; }
+    .add_form_cnt .add_form_cnt_el form li {
+      margin-top: 0px; }
+  .add_form_cnt .add_form_btns_cnt .add_form_btn {
+    box-sizing: border-box;
+    width: 460px;
+    height: 80px;
+    line-height: 74px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    border: 3px solid white;
+    color: white;
+    font-size: 250%;
+    margin: 0px 10px; }
+    .add_form_cnt .add_form_btns_cnt .add_form_btn:hover {
+      cursor: pointer; }
+
+footer {
+  background-color: #000001; }
+  footer .footer_inner {
+    padding: 40px; }
+    footer .footer_inner h2 {
+      font-size: 200%;
+      text-align: center;
+      color: #ffbf00; }
+    footer .footer_inner .social_cnt {
+      padding: 60px 0px;
+      text-align: center; }
+      footer .footer_inner .social_cnt ul {
+        list-style-type: none; }
+        footer .footer_inner .social_cnt ul li {
+          display: inline-block;
+          padding: 0px 13px; }
+    footer .footer_inner p {
+      font-size: 128%;
+      color: white;
+      text-align: center;
+      padding: 50px 0px; }
+  footer .logo_cnt {
+    padding: 31px 0px;
+    background-color: #ffbf00;
+    text-align: center; }
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  font-size: 14px;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto; }
+
+section {
+  box-sizing: border-box;
+  width: 960px;
+  background-color: white; }
+
+.section_divider {
+  width: 100%;
+  height: 16px;
+  background-color: #ffbf00; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
